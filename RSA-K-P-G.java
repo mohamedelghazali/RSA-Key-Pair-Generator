@@ -19,7 +19,7 @@ public class RSAKeyPairGenerator {
         this.publicKey = pair.getPublic();
     }
 
-    public void writeToFile(String path, byte[] key) throws IOException {
+    public void writeToFile(String path, byte[] key) throws IOException { 
         File f = new File(path);
         f.getParentFile().mkdirs();
 
